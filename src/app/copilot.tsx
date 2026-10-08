@@ -1,4 +1,4 @@
-﻿import React, { useState } from "react";
+import React, { useState } from "react";
 import {
   View,
   Text,
@@ -27,7 +27,7 @@ import {
 } from "lucide-react-native";
 import BottomNav from "../components/BottomNav";
 
-const API_URL = "http://192.168.0.101:3000";
+const API_URL = process.env.EXPO_PUBLIC_API_URL || "https://classpilot-sen1.onrender.com";
 
 type Message = {
   id: string;
@@ -103,7 +103,7 @@ export default function CopilotScreen() {
       id: `${Date.now()}-user`,
       role: "user",
       text: currentAttachment
-        ? `${displayQuestion}\n\n📎 ${currentAttachment.name}`
+        ? `${displayQuestion}\n\n?? ${currentAttachment.name}`
         : displayQuestion,
     };
 
@@ -605,3 +605,4 @@ const styles = StyleSheet.create({
     opacity: 0.5,
   },
 });
+

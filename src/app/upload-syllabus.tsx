@@ -21,7 +21,7 @@ import {
   Upload,
 } from "lucide-react-native";
 
-const API_URL = "http://192.168.0.101:3000";
+const API_URL = process.env.EXPO_PUBLIC_API_URL || "https://classpilot-sen1.onrender.com";
 const SYLLABUS_KEY = "classpilot_syllabus";
 
 export default function UploadSyllabusScreen() {
@@ -771,3 +771,4 @@ const styles = StyleSheet.create({
     fontWeight: "700",
   },
 });
+
