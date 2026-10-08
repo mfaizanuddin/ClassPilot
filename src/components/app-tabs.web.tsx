@@ -1,4 +1,4 @@
-import {
+﻿import {
   Tabs,
   TabList,
   TabTrigger,
@@ -113,3 +113,4 @@ const styles = StyleSheet.create({
     marginLeft: Spacing.three,
   },
 });
+

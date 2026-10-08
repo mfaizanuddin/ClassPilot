@@ -1,4 +1,4 @@
-import { SymbolView } from 'expo-symbols';
+﻿import { SymbolView } from 'expo-symbols';
 import { PropsWithChildren, useState } from 'react';
 import { Pressable, StyleSheet } from 'react-native';
 import Animated, { FadeIn } from 'react-native-reanimated';
@@ -63,3 +63,4 @@ const styles = StyleSheet.create({
     padding: Spacing.four,
   },
 });
+
